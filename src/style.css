@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh; */
+}
+
+main {
+  /* background-color: #80201D; */
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-image: url(../src/img/jpeg/Multi\ layers\ gray\ blue\ dark\ texture\ 3D.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 50px 0;
+  border-radius: 20px;
+}
+main::before {
+  content: "Chalenge semaine du 25/05 (carte de presentation)";
+}
+main p {
+  font-size: 14px;
+}
+/* main>figure {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+}
+main>figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+} */
+
+main h1 {
+  font-size: 18px;
+  font-weight: normal;
+}
+main h1 span {
+  font-size: 28px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+main .hero {
+  margin: 20px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+main .hero>div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main .hero p::before {
+  content: "";
+  display: flex;
+  width: 70%;
+  border-top: 1px solid;
+}
+main .hero p::after {
+  content: "";
+  display: flex;
+  width: 70%;
+  border-top: 1px solid;
+}
+main .hero p {
+  color: #BDBDBD;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main .hero figure {
+  width: 200px;
+  height: 200px;
+}
+main .hero figure img {
+  object-fit: cover;
+  border-radius: 50px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+main .hero figure img:hover {
+  box-shadow: 2px 2px 10px 0 white;
+  transition: 0.5s ease;
+  scale: 1.05;
+}
+
+main .competence {
+  margin: 20px;
+}
+main .competence h2 {
+  text-transform: uppercase;
+  background-color: #FFFFFF;
+  color: #1d283a;
+  font-size: 24px;
+}
+main .competence .competence-list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin-top: 10px;
+  gap: 20px;
+  width: 100%;
+}
+main .competence .competence-list .competence-list-div {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  border: solid;
+  border-width: 1px 0 0 1px;
+}
+main h3 {
+  text-transform: capitalize;
+  margin-top: 20px;
+  width: 200px;
+}
+main .competence .competence-list .competence-list-div>div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+main .competence .competence-list .competence-list-div>div figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  gap: 5px;
+}
+main .competence .competence-list .competence-list-div>div figure>p {
+  font-size: 12px;
+  text-transform: capitalize;
+}
+main .competence .competence-list figure img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+main .competence .competence-list figure img:hover {
+  scale: 1.5;
+  transition: 0.5s ease;
+}
+
+main footer {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+main footer span {
+  text-transform: capitalize;
+  font-style: italic;
+}
+
+@media (min-width: 768px) {
+  main {
+    width: 60%;
+  }
+  main p {
+    font-size: 16px;
+  }
+
+  main .hero {
+    flex-direction: row;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: start;
+  }
+  main .competence .competence-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  main .competence .competence-list figure img {
+    width: 35px;
+    height: 35px;
+  }
+  main .competence h2 {
+    font-size: 26px;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    width: 70%;
+    background-image: url(../src/img/jpeg/Multi\ layers.jpg);
+    /* background-color: rgb(39, 3, 3);
+    background-image: none; */
+  }
+  main .hero {
+    margin: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20%;
+  }
+  main .hero>div {
+    display: flex;
+    width: 70%;
+    gap: 20px;
+  }
+  main .hero figure {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+  }
+  main p {
+    font-size: 18px;
+  }
+
+  main .competence {
+    margin: 40px 40px;
+  }
+  main .competence h2 {
+    font-size: 28px;
+  }
+  main .competence .competence-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 10px;
+    gap: 20px;
+    width: 100%;
+  }
+  main .competence .competence-list .competence-list-div {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    align-items: start;
+    justify-content: space-between;
+    border: none;
+  }
+  main .competence .competence-list .competence-list-div>div {
+    display: flex;
+    width: 80%;
+    gap: 20px;
+  }
+  main .competence .competence-list figure img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+  main footer {
+    margin: 40px;
+    justify-content: center;
+  }
+}
